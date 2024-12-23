@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background-color: #2b2424
+}
+
+header {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    border: 2px solid grey;
+    border-radius: 12px;
+    position: fixed;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration-line: none;
+}

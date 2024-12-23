@@ -1,0 +1,177 @@
+/* Reset and General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --primary-color: #291a3b;
+    --secondary-color: #1d6b8a;
+    --hover-color: #ff0000;
+    --text-color: #fff;
+    --highlight-color: green;
+}
+
+/* Flex Container for Main Sections */
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    padding: 20px;
+}
+
+.image {
+    margin-right: 20px;
+    width: 650px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+/* Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px; /* Prevents overly wide content on larger screens */
+}
+
+h1 {
+    color: var(--text-color);
+    margin: 50px 15px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Container for Navigation Section */
+.container2 {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    padding: 20px;
+}
+
+/* Navigation Button */
+.navigateAbout {
+    width: 500px;
+    max-width: 90%; /* Ensures better scaling on smaller screens */
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigateAbout:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px var(--hover-color);
+}
+
+/* Popular Product Cards */
+.popular-product {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    max-width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.popular-product h4 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.popular-product p {
+    color: var(--highlight-color);
+    text-align: center;
+    margin-top: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Product Section */
+.container3 {
+    padding: 20px;
+}
+
+.container-description {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Responsive Design for Smartphones */
+@media (max-width: 768px) {
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin: 20px 0;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 450px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .popular-product {
+        height: 130px;
+    }
+
+    .container-products {
+        grid-template-columns: 1fr;
+    }
+
+    .navigateAbout {
+        font-size: 1rem;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}

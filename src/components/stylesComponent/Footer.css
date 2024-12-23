@@ -1,0 +1,14 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #20404f;
+    color: white;
+}
+
+.base-information-container {
+    text-align: center;
+}
+
+.SocilaMedias-container {
+    margin-right: 30px
+}

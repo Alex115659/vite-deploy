@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Irish+Grover&family=Itim&family=Jaro:opsz@6..72&family=Lora:ital,wght@0,400..700;1,400..700&family=Nerko+One&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Irish+Grover&family=Itim&family=Jaro:opsz@6..72&family=Lora:ital,wght@0,400..700;1,400..700&family=Nerko+One&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&display=swap');
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.subContainer1 p {
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin: 10px 0;
+}
+
+li {
+    color: white;
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+#sbc {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    #sbc {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+#sbc div {
+    margin-left: 30px;
+    text-align: center;
+}
+
+#sbc div div {
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#sbc div div img {
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+
+#sbc p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.container3 p {
+    color: white;
+    font-family: Lora;;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2
+}
+
+.line {
+    border: 1px solid blue;
+    max-width: 100%;
+    height: 2px
+}

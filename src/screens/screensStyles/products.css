@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 30px
+}
+
+.product-card {
+    border: 2px solid grey;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.product-card button {
+    background-color: orange;
+    border-radius: 10px;
+    border: 1px solid orange;
+    width: 100px;
+    margin-bottom: 10px;
+    height: 20px;
+    cursor: pointer;
+    transition: 2s
+}
+
+.product-card  button:hover {
+    width: 130px;
+    height: 30px;
+}
