@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer.jsx';
 import './screensStyles/products.css';
-import Window from './ModuleWindow';
+import Window from './ModuleWindow.jsx';
 
 function Products() {
     const [products, setProducts] = useState([]);
